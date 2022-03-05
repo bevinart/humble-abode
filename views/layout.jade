@@ -1,0 +1,36 @@
+doctype html
+html
+  head
+    title= title
+    link(rel="shortcut icon", href="/images/favicon.png", type="image/x-icon")
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Roboto")
+    link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Lato")
+  body
+    header.header-content
+      a.home-button(href="/")
+        h3 Home
+      a.nav-bar(href="about")
+        h3 About
+      a.nav-bar(href="code")
+        h3 Code
+      a.nav-bar(href="cool-thing")
+        h3 Cool thing
+
+    block bodyContent
+    script(src="https://unpkg.com/react@17/umd/react.production.min.js")
+    script(src="https://unpkg.com/react-dom@17/umd/react-dom.production.min.js")
+  footer
+    div.footer-content
+      p Keep Code Open Source 
+      p 
+        i ~ Primitive
+
+      a(href="http://www.github.com/bevinart")  
+        img(src="/images/github.png", alt="Github user: bevinart")
+      a(href="http://")  
+        img(src="/images/stack-overflow.png", alt="StackOverflow user: bevinart")
+      a(href="http://")
+        img(src="/images/discord.png", alt="Discord user: ") 
+      a(href="http://www.twitter.com/ThatPrimitive")  
+        img(src="/images/twitter.png", alt="Twitter user: bevinart")
