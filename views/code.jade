@@ -1,0 +1,26 @@
+extends layout 
+
+block bodyContent
+ title= title
+ link(rel="stylesheet", href="/stylesheets/code.css")
+
+ div.left-box#github_projects
+  img#gh-avatar
+  p#gh-owner {{ owner }}
+  h2#repo-title {{ title }} 
+  p#gh-description {{ description }}
+  p 
+   i ~ Written with: 
+    b {{ language }}
+   i ~
+  
+  div#gh-nav-bar
+   button(v-on:click="Change_i(-1)").gh-button < 
+   a(v-bind:href="url")#gh-view-repo View Repo 
+   button(v-on:click="Change_i(1)").gh-button >
+
+  script(type="text/javascript", src="https://code.jquery.com/jquery-3.6.0.min.js")
+  script(type="module", src="/javascripts/github-projects.js").
+
+ div.right-box 
+
