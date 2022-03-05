@@ -3,8 +3,8 @@ html, body {
   padding: 0;
   margin: 0;
   overflow-y: auto;
-  min-width: 730px;
-  background-color:rgb(49, 49, 49);
+  min-width: 900px;
+  background:linear-gradient(180deg, rgb(49, 49, 49), rgb(36, 36, 36));
 }
 html {
   height: 100%;
@@ -71,14 +71,13 @@ a:hover::before {
 .sidebyside {
   display: grid;
   grid-template-columns: 1fr auto;
-  grid-gap: 50px;
 }
 .row1 {
-  margin-left: 100px;
+  margin-left: 200px;
 
 }
 .row2 {
-  margin-right: 100px;
+  margin-right: 200px;
 }
 .centertext {
   text-align: center;
@@ -87,6 +86,8 @@ a:hover::before {
 @media only screen and (max-width: 1300px) {
   .sidebyside {
     display: block;
+    margin-left: 13%;
+    margin-right: 13%;
   }
   .row1 {
     margin: 50px;
