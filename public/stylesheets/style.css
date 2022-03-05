@@ -3,6 +3,7 @@ html, body {
   padding: 0;
   margin: 0;
   overflow-y: auto;
+  min-width: 730px;
   background-color:rgb(49, 49, 49);
 }
 html {
@@ -17,7 +18,7 @@ h1, h2, h3, h4, h5, h6 {
   color: rgb(228, 225, 225);
   font-family: "Roboto", sans-serif;
 }
-p {
+p, a {
   color: rgb(228, 225, 225);
   font-family: "Lato", serif;
 }
@@ -45,6 +46,56 @@ a:hover::before {
   transform: scaleX(1);
 }
 
+/* Properties for the boxes you see on the website */
+.box {
+  background-color:rgb(36, 35, 35);
+  border: 2px solid rgb(230, 230, 230);
+  border-radius: 20px;
+  margin: 30px;
+  width: auto;
+  max-width: 700px;
+  box-shadow: 4px 4px 4px rgb(22, 22, 22);
+  
+}
+.box h2 {
+  text-align: center;
+  padding-bottom: 20px;
+  border-bottom: solid 1px rgb(228, 225, 225);
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.box p {
+  margin-left: 30px;
+  margin-right: 15px;
+}
+.sidebyside {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  grid-gap: 50px;
+}
+.row1 {
+  margin-left: 100px;
+
+}
+.row2 {
+  margin-right: 100px;
+}
+.centertext {
+  text-align: center;
+}
+
+@media only screen and (max-width: 1300px) {
+  .sidebyside {
+    display: block;
+  }
+  .row1 {
+    margin: 50px;
+  }
+  .row2 {
+    margin: 50px;
+  }
+
+}
 
 /* Header Content */
 header {

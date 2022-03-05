@@ -3,24 +3,40 @@ extends layout
 block bodyContent
  title= title
  link(rel="stylesheet", href="/stylesheets/code.css")
-
- div.left-box#github_projects
-  img#gh-avatar
-  p#gh-owner {{ owner }}
-  h2#repo-title {{ title }} 
-  p#gh-description {{ description }}
-  p 
-   i ~ Written with: 
-    b {{ language }}
-   i ~
+ div.sidebyside
+  div.box.row1#github_projects
+   center
+     img(v-bind:src="avatar_url")#gh-avatar
+   p#gh-owner {{ owner }}
+   h2#repo-title {{ title }} 
+   p#gh-description {{ description }}
+   p#written-with 
+    i ~ Written with: 
+     b {{ language }}
+    i ~
   
-  div#gh-nav-bar
-   button(v-on:click="Change_i(-1)").gh-button < 
-   a(v-bind:href="url")#gh-view-repo View Repo 
-   button(v-on:click="Change_i(1)").gh-button >
+   div#gh-nav-bar
+    button(v-on:click="Change_i(-1)").gh-button < 
+    a(v-bind:href="url")#gh-view-repo View Repo 
+    button(v-on:click="Change_i(1)").gh-button >
 
-  script(type="text/javascript", src="https://code.jquery.com/jquery-3.6.0.min.js")
-  script(type="module", src="/javascripts/github-projects.js").
+   script(type="text/javascript", src="https://code.jquery.com/jquery-3.6.0.min.js")
+   script(type="module", src="/javascripts/github-projects.js").
 
- div.right-box 
-
+  div.box.row2
+   h2 >_ Code Experience 
+   p I work with a variety of different languages, multitudes of APIs, frameworks, and libraries, and years of experience 
+   div.centertext
+    p I have experience in the following: 
+    p 
+     i - HTML/CSS (Duh.)
+    p 
+     i - Python 
+    p 
+     i - Javascript 
+    p 
+     i - Bash 
+    p 
+     i - C/C++
+    p 
+     i - ..and many more!
