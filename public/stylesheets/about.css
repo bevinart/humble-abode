@@ -1,0 +1,13 @@
+.img-background {
+    width: 100%;
+    height: 700px;
+    mask-image: linear-gradient(to bottom, rgba(0,0,0,.40) 0%, rgba(0,0,0,.40) 50%, rgba(0,0,0,0) 100%);
+    object-fit: cover;
+}
+.box {
+    position: absolute;
+    width: 70%;
+    left: 30%;
+    top: 200px;
+    margin-left: 40px;
+}

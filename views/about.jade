@@ -1,1 +1,13 @@
 extends layout
+
+block bodyContent
+  link(rel="stylesheet", href="/stylesheets/about.css")
+  div.about
+    img(src="/images/code-background.jpg", alt="Code Background", srcset="").img-background
+    div.box
+        h2 About Me 
+        p TIMELINE ->
+        p | Born 
+          b July 23, 2002
+        p | Went to 
+          b Churubusco Jr./Sr. High School
