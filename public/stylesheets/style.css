@@ -79,9 +79,6 @@ a:hover::before {
 .row2 {
   margin-right: 200px;
 }
-.centertext {
-  text-align: center;
-}
 
 @media only screen and (max-width: 1300px) {
   .sidebyside {
@@ -130,4 +127,9 @@ footer img {
 }
 footer img:hover {
   opacity: 90%;
+}
+
+/* Helpful class(es) */
+.centertext {
+  text-align: center;
 }
