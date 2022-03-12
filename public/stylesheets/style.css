@@ -86,6 +86,9 @@ a:hover::before {
     margin-left: 13%;
     margin-right: 13%;
   }
+  .box {
+    position: relative;
+  }
   .row1 {
     margin: 50px;
   }
